@@ -6,6 +6,7 @@ const UserPreferences = Services.prefs;
 const DefaultPreferences = Services.prefs.getDefaultBranch("");
 
 function startup(data) {
+  // Switch default to SBv4
   DefaultPreferences.setStringPref("urlclassifier.malwareTable", "goog-malware-proto,goog-unwanted-proto,test-malware-simple,test-unwanted-simple");
   DefaultPreferences.setStringPref("urlclassifier.phishTable", "goog-phish-proto,test-phish-simple");
   DefaultPreferences.setStringPref("urlclassifier.downloadAllowTable", "goog-downloadwhite-proto");
@@ -16,5 +17,11 @@ function startup(data) {
 }
 
 function shutdown(data) {
+  // Set default back to SBv2
+  DefaultPreferences.setStringPref("urlclassifier.malwareTable", "goog-malware-shavar,goog-unwanted-shavar,test-malware-simple,test-unwanted-simple");
+  DefaultPreferences.setStringPref("urlclassifier.phishTable", "goog-phish-shavar,test-phish-simple");
+  DefaultPreferences.setStringPref("urlclassifier.downloadAllowTable", "goog-downloadwhite-digest256");
+  DefaultPreferences.setStringPref("urlclassifier.downloadBlockTable", "goog-badbinurl-shavar");
+
   UserPreferences.clearUserPref("browser.safebrowsing.provider.google.advisoryName");
 }
