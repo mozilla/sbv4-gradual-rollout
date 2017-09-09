@@ -4,7 +4,7 @@
 
 ## Building the add-on
 
-    zip -r ../sbv4-gradual-rollout.xpi *
+    zip -r ../sbv4-gradual-rollout.xpi bootstrap.js install.rdf
 
 ## Installing the add-on in Firefox
 
