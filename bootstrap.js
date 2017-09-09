@@ -16,5 +16,5 @@ function startup(data) {
 }
 
 function shutdown(data) {
-  // cleanup not required since the value of the UserPref we set is the new default in 57+
+  UserPreferences.clearUserPref("browser.safebrowsing.provider.google.advisoryName");
 }
