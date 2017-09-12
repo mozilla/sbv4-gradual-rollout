@@ -7,7 +7,7 @@
     <em:unpack>false</em:unpack>
     <em:version>1.0.0</em:version>
     <em:name>Safe Browsing Version 4 (temporary add-on)</em:name>
-    <em:description>This temporary add-on enables the new version of the Safe Browsing API which automatically protects against dangerous and deceptive sites. It will be automatically removed once the gradual roll-out of this feature is complete.
+    <em:description>This temporary add-on enables the new version of the Safe Browsing API, which protects against dangerous and deceptive sites. It will be automatically removed once the roll-out of this feature is complete.
     </em:description>
     <em:creator>Firefox Team</em:creator>
 
