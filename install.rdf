@@ -5,6 +5,7 @@
     <em:type>2</em:type>
     <em:bootstrap>true</em:bootstrap>
     <em:unpack>false</em:unpack>
+    <em:multiprocessCompatible>true</em:multiprocessCompatible>
     <em:version>1.0.0</em:version>
     <em:name>Safe Browsing Version 4 (temporary add-on)</em:name>
     <em:description>This temporary add-on enables the new version of the Safe Browsing API, which protects against dangerous and deceptive sites. It will be automatically removed once the roll-out of this feature is complete.
